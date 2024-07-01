@@ -10,25 +10,36 @@
     <h1>내가 생각하는 숫자를 맞춰봐!</h1>
 
     <div>
-        <p>[게임 규칙]</p>
-        <p>1 ~ 50 까지의 숫자 중 하나야.</p>
-        <p>기회는 총 5번이야</p>
-        <p>너가 입력한 숫자가 내가 생각한 숫자보다 크면 Up!</p>
-        <p>너가 입력한 숫자가 내가 생각한 숫자보다 작으면 Down!</p>
-    
+        <span id="rules-icon">ℹ️</span>
+        <div class="modal-background">
+            <div class="modal">
+                <p>[게임 규칙]</p>
+                <p>1 ~ 50 까지의 숫자 중 하나야.</p>
+                <p>기회는 총 3번이야</p>
+                <p>너가 입력한 숫자가 내가 생각한 숫자보다 크면 Up!</p>
+                <p>너가 입력한 숫자가 내가 생각한 숫자보다 작으면 Down!</p>
+                <button id="close-modal">닫기</button>
+            </div>
+        </div>
     </div>
     
     <br/>
 
-    <input type="number"/>
-
+    <input id="user-input" type="number" placeholder="여기에 숫자 입력"/>
+        
     <button id="send-button">전송!</button>
-    
+        
     <button id="reset-button">처음부터 다시..ㅠ</button>
-    
+        
     <br/>
 
-    <div id="chance-area">남은 기회 : 5번</div>
+    <div id="chance-area">남은 기회 : 3번</div>
+
+    <div id="history-area">당신이 입력한 숫자들 : </div>
+
+    <div id="result-area">당신이 예측한 숫자에 대한 결과는?</div>
+
+    <div id="result">정답 : </div>
 
     <script src="main.js"></script>
 </body>

@@ -1,0 +1,118 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #b0f8e5;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* 게임 규칙 부분 */
+#rules-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* 입력 필드 및 버튼 */
+input, button {
+    padding: 10px;
+    margin: 5px 0px;
+    font-size: 16px;
+}
+
+#send-button, #reset-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#send-button:hover, #reset-button:hover {
+    background-color: #0056b3;
+}
+
+#chance-area {
+    color: #d7abd7;
+}
+
+#result-area {
+    color: red;
+}
+
+#result {
+    color: blue;
+    font-weight: bold;
+}
+
+#history-area {
+    color: green;
+}
+
+/* 남은 기회, 히스토리, 결과 부분, 정답 부분 */
+#chance-area, #history-area, #result-area, #result {
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+/* 모달 배경 */
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal p {
+    margin-bottom: 10px;
+}
+
+#close-modal {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-modal:hover {
+    background-color: #0056b3;
+}
+
+#user-input {
+    text-align: center;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    input, button {
+        width: 80%;
+    }
+}
